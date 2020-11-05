@@ -1,4 +1,4 @@
-FROM arm64v8/openjdk:16-jdk
+FROM balenalib/armv7hf-openjdk:11-bullseye
 RUN addgroup -S spring && adduser -S spring -G spring
 USER spring:spring
 ARG JAR_FILE=target/*.jar
